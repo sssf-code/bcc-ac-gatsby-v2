@@ -6,7 +6,7 @@ import React from 'react';
 import PlatformstNav from './PlatformsNav';
 
 const { socialLinks } = menus;
-const { social_youtube, social_rss, social_itunes, social_spotify } = socialLinks;
+const { social_youtube, social_itunes, social_spotify } = socialLinks;
 
 const platforms = [
 	{
@@ -23,11 +23,6 @@ const platforms = [
 		icon: <YoutubeIcon customSize={36} className="w-6 h-6" />,
 		name: 'Youtube',
 		url: social_youtube
-	},
-	{
-		icon: <GooglePodcastIcon customSize={36} className="w-6 h-6" />,
-		name: 'RSS',
-		url: social_rss
 	}
 ];
 const Platforms: React.FC<{ col?: boolean }> = ({ col }) => <PlatformstNav platforms={platforms} col={col} />;

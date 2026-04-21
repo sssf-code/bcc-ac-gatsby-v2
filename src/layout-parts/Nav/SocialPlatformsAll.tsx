@@ -5,14 +5,9 @@ import React from 'react';
 import PlatformstNav from './PlatformsNav';
 
 const { socialLinks } = menus;
-const { social_facebook, social_instagram, social_youtube, social_rss, social_itunes, social_spotify } = socialLinks;
+const { social_instagram, social_youtube, social_itunes, social_spotify } = socialLinks;
 
 export const platforms = [
-	{
-		url: social_facebook,
-		icon: <FacebookIcon />,
-		name: 'Facebook'
-	},
 	{
 		url: social_instagram,
 		icon: <InstagramIcon />,

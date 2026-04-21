@@ -91,7 +91,7 @@ const languageSites = async function () {
 			metadata[s.key] = s.value;
 		});
 
-		const { social_facebook, social_instagram, social_youtube, social_rss, social_itunes, social_spotify } =
+		const { social_instagram, social_youtube, social_itunes, social_spotify } =
 			metadata;
 		menus['languages'] = sites
 			? sites.map(item => ({
@@ -105,10 +105,8 @@ const languageSites = async function () {
 		menus['slugUser'] = slug_user;
 		menus['topLink'] = metadata['top_link'];
 		menus['socialLinks'] = {
-			social_facebook,
 			social_instagram,
 			social_youtube,
-			social_rss,
 			social_itunes,
 			social_spotify
 		};
