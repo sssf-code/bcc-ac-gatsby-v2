@@ -1,6 +1,5 @@
 import LazyLoad from '@/components/LazyLoad';
 import ExclusiveContent from '@/layout-parts/Banner/ExclusiveContent copy';
-import NewsLetter from '@/layout-parts/Banner/NewsLetter';
 import TopDesktop from '@/layout-parts/Nav/TopDesktop';
 import { socialLoginlocalStorageKey } from '@/layout-parts/SignInSignUp/Main';
 import CookieConsent from '@/layouts/AppWrapper/CookeConsent';
@@ -57,7 +56,6 @@ const App: React.FC<{ pageContext: { title?: string; slug?: string } }> = props 
 			</div>
 
 			<LazyLoad>
-				<NewsLetter />
 				{/*                 <ExclusiveContent /> */}
 				<Footer />
 			</LazyLoad>
