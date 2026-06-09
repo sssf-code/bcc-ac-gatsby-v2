@@ -1,6 +1,4 @@
 import LazyLoad from '@/components/LazyLoad';
-import ExclusiveContent from '@/layout-parts/Banner/ExclusiveContent copy';
-import NewsLetter from '@/layout-parts/Banner/NewsLetter';
 import TopDesktop from '@/layout-parts/Nav/TopDesktop';
 import { socialLoginlocalStorageKey } from '@/layout-parts/SignInSignUp/Main';
 import CookieConsent from '@/layouts/AppWrapper/CookeConsent';
@@ -47,7 +45,6 @@ const App: React.FC<{ pageContext: { title?: string; slug?: string } }> = props 
 			<Infobar key={shortid()} showDuration={7000} />
 			<CookieConsent key={shortid()} />
 			<SignInSignUpModal key={shortid()} />
-			{/* <MediaPlayer key={shortid()} /> */}
 			<MediaPlayerNew key={shortid()} />
 			<TopDesktop key={shortid()} explorePage={menusItems.explore} />
 
@@ -57,8 +54,6 @@ const App: React.FC<{ pageContext: { title?: string; slug?: string } }> = props 
 			</div>
 
 			<LazyLoad>
-				<NewsLetter />
-				{/*                 <ExclusiveContent /> */}
 				<Footer />
 			</LazyLoad>
 		</LazyMotion>
