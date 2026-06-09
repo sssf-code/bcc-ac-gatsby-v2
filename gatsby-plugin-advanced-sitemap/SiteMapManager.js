@@ -6,7 +6,7 @@ exports.default = void 0;
 var _IndexMapGenerator = _interopRequireDefault(require("./IndexMapGenerator"));
 var _SiteMapGenerator = _interopRequireDefault(require("./SiteMapGenerator"));
 var _lodash = _interopRequireDefault(require("lodash"));
-var SiteMapManager = /*#__PURE__*/function () {
+var SiteMapManager = exports.default = /*#__PURE__*/function () {
   function SiteMapManager(options) {
     var _this = this;
     var sitemapTypes = [];
@@ -56,7 +56,7 @@ var SiteMapManager = /*#__PURE__*/function () {
 
   // This is the equivalent of adding the URLs on bootstrap by listening to the events
   // like we do in Ghost core
-  ;
+;
   _proto.addUrls = function addUrls(type, _ref) {
     var url = _ref.url,
       node = _ref.node;
@@ -64,4 +64,3 @@ var SiteMapManager = /*#__PURE__*/function () {
   };
   return SiteMapManager;
 }();
-exports.default = SiteMapManager;
