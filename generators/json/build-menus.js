@@ -35,7 +35,7 @@ const getMenus = () => {
 				: mobileMenuOptions.other;
 		const items = [...menu].map(item => ({ ...menusItems[item], iconName: iconNameMapNav[item] }));
 		menus['mobile'] = {
-			loggedIn: [...menu, 'my-content'].map(item => ({ ...menusItems[item], iconName: iconNameMapNav[item] })),
+			loggedIn: ['home', ...menu].map(item => ({ ...menusItems[item], iconName: iconNameMapNav[item] })),
 			default: ['home', ...menu].map(item => ({ ...menusItems[item], iconName: iconNameMapNav[item] }))
 		};
 		return items;
@@ -125,6 +125,5 @@ const iconNameMapNav = {
 	podcast: 'HeadsetIcon',
 	read: 'DescriptionIcon',
 	watch: 'PlayCircleOutlineIcon',
-	'my-content': 'BookmarksIcon',
 	topic: 'LocalOfferIcon'
 };

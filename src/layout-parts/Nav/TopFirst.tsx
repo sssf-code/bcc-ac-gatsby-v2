@@ -1,6 +1,5 @@
 import { LaunchIcon } from '@/components/Icons/MUI/navIcons';
 import LanguageDropdown from '@/layout-parts/Nav/Languages';
-import UserNav from '@/layout-parts/Nav/User';
 import ac_strings from '@/strings/ac_strings';
 import menus from '@/strings/generated/menus.json';
 import { graphql } from 'gatsby';
@@ -26,7 +25,6 @@ const TopDesktop: React.FC = () => {
 					</span>
 				</a>
 				<div className="hidden sm:flex items-center text-sm">
-					<UserNav className="pr-4" />
 					<a
 						target="_blank"
 						href={`/${ac_strings.slug_contact}`}
