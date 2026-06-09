@@ -15,5 +15,4 @@ var defaultOptions = {
   exclude: ["/dev-404-page", "/404", "/404.html", "/offline-plugin-app-shell-fallback"],
   createLinkInHead: true
 };
-var _default = defaultOptions;
-exports.default = _default;
+var _default = exports.default = defaultOptions;
