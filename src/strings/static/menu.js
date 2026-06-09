@@ -45,10 +45,6 @@ module.exports.menusItems = {
 	scripture: {
 		name: ac_strings.scripture,
 		to: `${ac_strings.slug_scripture}`
-	},
-	'my-content': {
-		name: ac_strings.my_content,
-		to: `${slug_user}/${ac_strings.slug_user_content}`
 	}
 };
 
